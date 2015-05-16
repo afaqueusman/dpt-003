@@ -1,0 +1,8 @@
+{
+  "name": "alfarahid",
+  "version": "0.1.0",
+  "dependencies": {
+  	"foundation": "zurb/bower-foundation"
+  }
+}
+
