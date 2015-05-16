@@ -1,0 +1,92 @@
+block vars
+  - var page_name='Interior Designing & Home Decor'
+  - var slug='interior'
+  - var layout='full'
+
+extends partials/layout
+
+block index
+  //Header 
+  section.banner
+    .row
+      h1 Interior Design and Home Decor
+  // End Header 
+  br
+  .row
+    .large-12.columns.round.panel
+      ul.breadcrumbs
+        li.unavailable Activities
+        li.current
+          a(href='#') Interior Designing
+      p
+        strong Jonquil Interiors
+        | , part of the Jonquil Group, is one of the leading Interior Designing & Home Decor services in the Kingdom. We offer a variety of design services ranging from Full Service Interior Design and Styling to our Design Consultancy services, all of which are executed with beautiful, custom-tailored results. Whether you have an entire house in need of decorating or you just want to add the finishing touches to a room, we strive to make the process stress free for you.
+      p
+        | The three basic principles; space utilization, aesthetics orientation and diverse aspects of architectural understanding, dedication and valued services has made us deliver quality services and full customer satisfaction. Today, the company is major suppliers of various services in interior designer industry. The company has shown robust growth in its business, which is evident from its top line, which has grown tremendously.
+      h4 Creative Solutions
+      p
+        | Our specially trained Home design advisors will bring a fresh and creative perspective to your interior design project, working closely with you every step of the way to design a scheme that's personal, practical and unique.
+      P
+        | Following are some of the styles for your guidance:
+      dl.accordion(data-accordion='data-accordion')
+        dd.accordion-navigation
+          a(href='#panel1') 
+            h5 Modern Minimalist Style
+          #panel1.content.active
+            .row
+              .large-6.push-6.columns
+                img(src='img/ModernMinimalist_style.jpg')
+              .large-6.pull-6.columns  
+                p
+                  | This style is a form of extreme accuracy, nothing is too much, without heavy backgrounds. The emphasis is on simplicity, the colors may be dull or bright, in any case flashy colors. Pieces are either geometric shapes – square, rectangular, round, but the surfaces are clean, no scenery, no details. Minimalist modern style by its name, illustrates the simplified forms.
+        dd.accordion-navigation
+          a(href='#panel2') 
+            h5 Contemporary Style
+          #panel2.content
+            .row
+              .large-6.push-6.columns
+                img(src='img/Contemporary_style.jpg')
+              .large-6.pull-6.columns  
+                p
+                  | The style is contemporary-modern style but maintains a hot line through selected finishes and color range used. The songs do not seem very new, modern, cool.  Colors are balanced, warm, bright tones and pastel can be out of the question when it comes to these style. Finishes warm, wood-veneer, solid wood doors with frames or appearance to look more polished and panels upholstered with leather or sometimes, may be characteristic of this style. Textile materials, velvet, plush, upholstered pieces ptr skin are often used in shaping the ambience characteristic of this style. Printed plates, vegetable or floral color stains can not be used to amaze complete certain parts of decorated cushions, carpets, etc. Scandinavian modern style can be defined as a contemporary style.
+        dd.accordion-navigation
+          a(href='#panel3') 
+            h5 Hi-Tech Style
+          #panel3.content
+            .row
+              .large-6.push-6.columns
+                img(src='img/HiTech_style.jpg')
+              .large-6.pull-6.columns  
+                p
+                  | Hightech style is an innovative modern style, the emphasis being on furniture structure where every detail of combination is not random and it is part of that structure. Screws, rivets, wheels apparent booms, rough metal finishes, appearances bulbs are specific to this style. The finishes used are often of metal, glass and plastic and wood in small proportions and for parts we find fabric-upholstered as simple as we can, leather. The colors are often dull-gray, white, small black scale.
+        dd.accordion-navigation
+          a(href='#panel4') 
+            h5 Elegant Country Style
+          #panel4.content
+            .row
+              .large-6.push-6.columns
+                img(src='img/ElegantCountry_style.jpg')
+              .large-6.pull-6.columns  
+                p
+                  | Rural style is elegant furniture style with influences from English, French or Scandinavian classic pure style can be called rural chic. Furniture finishes are nice, bright colors-white, pastel colors and forms were taking over traditional furniture but not abundant decorations. Surfaces are painted or sometimes have a slight patina.
+        dd.accordion-navigation
+          a(href='#panel5') 
+            h5 Classic Style
+          #panel5.content
+            .row
+              .large-6.push-6.columns
+                img(src='img/Classic_style.jpg')
+              .large-6.pull-6.columns  
+                p
+                  | It is a refined style, developed, rich in details, which are found both in the structure of furniture, lighting, etc. as well as in sets, prints. The furniture is the “art” type, carved or inlaid details and apply. Decorated with floral elements, vegetable, various leitmotif or scenes drawn from legends.
+        dd.accordion-navigation
+          a(href='#panel6') 
+            h5 Classic Reinterpreted Style
+          #panel6.content
+            .row
+              .large-6.push-6.columns
+                img(src='img/ClassicReinterpreted_style.jpg')
+              .large-6.pull-6.columns  
+                p
+                  | It is a refined style, elegant, where classic forms details are found in a new approach. The forms preserves the structure of old forms or parts in general updating them sometimes, or some elements of a furniture style combined with modern elements, creating that fusion between old and new. Finishing parts are in a new approach-painted and varnished, with different and innovative colors, surface gold, silver, finished with patina or serigraphic.
+        

@@ -6,19 +6,39 @@ block vars
 extends partials/layout
 
 block index
-  //Header 
-  section.show-for-medium-up.slideshow-wrapper
-    .preloader
-    ul(data-orbit, data-options='animation:fade; pause_on_hover:true; resume_on_mouseout: true; animation_speed:500; bullets:false;')
-      li
-        .banner
-          img(src='holder.js/2500x450/sky/text:Hello WORLD', alt='slide 1')
-      li
-        .banner
-          img(src='holder.js/2500x450/vine/text:Add \n line breaks \n anywhere.', alt='slide 2')
-      li
-        .banner
-          img(src='holder.js/2500x450/social/text:Hello WORLD', alt='slide 3')
-  br
-  :markdown
-    include ../markdown/index.md
+    section.heroIndex
+        .parallax
+        .preloader
+        ul.example-orbit-content(data-orbit, data-options='animation:fade; pause_on_hover:true; resume_on_mouseout: true; animation_speed:500; bullets:false;')
+            div(data-orbit-slide='headline-1')
+                .slide-1
+                    .row
+                        .large-6.columns.banner-content
+                            h2 We Assist you in your Endeavour to Properity
+                            h5 
+                            a.jq_button.info(href='message.html') Learn More
+            div(data-orbit-slide='headline-2')
+                .slide-2
+                    .row
+                        .large-6.large-offset-6.columns.banner-content
+                            h2 Full Array of Construction services
+                            h5 
+                            a.jq_button.info(href='construction.html') Learn More
+            div(data-orbit-slide='headline-3')
+                .slide-3
+                    .row
+                        .large-6.columns.banner-content
+                            h2 Your Trusted Partner for Reliable supply
+                            h5
+                            a.jq_button.info(href='trading.html') Learn More
+            div(data-orbit-slide='headline-3')
+                .slide-4
+                    .row
+                        .large-6.large-offset-6.columns.banner-content
+                            h2 Redefining Aesthetics in Home Decor
+                            h5 
+                            a.jq_button.info(href='interior.html') Learn More
+    .section.pg-background
+        .row.mp-content
+            .large-12.columns(data-equalizer='data-equalizer', data-options='equalize_on_stack: false')
+                include:markdown content/1-index.md

@@ -1,1 +1,245 @@
-/* all app scss styles here */
+@charset "utf-8";
+/* CSS Document */
+
+// Variables
+
+$fine-print: rem-calc(12);
+
+// =========================================================================
+//       SITE WIDE OVERRIDES
+//==========================================================================
+
+.navigation-area{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+}
+
+// =========================================================================
+//       INDEX PAGE OVERRIDES
+//========================================================================== 
+
+.heroIndex {
+
+    .example-orbit-content{
+        div{
+
+            .slide-1{
+                height: rem-calc(500);
+                color: white;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .slide-2{
+                height: rem-calc(500);
+                color: white;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .slide-3{
+                height: rem-calc(500);
+                color: white;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .slide-4{
+                height: rem-calc(500);
+                color: white;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .large-6{
+                margin-top: rem-calc(150);
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            div{
+                h2, h5 {
+                    text-shadow: 0px 0px 20px #000;
+                    color: white;
+                }
+            }
+        }       
+    }
+}
+
+.parallax{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    background: url('../img/parallax.jpg') no-repeat center;
+}
+
+.pg-background{
+    background: $white;
+    .mp-content{
+        padding-top: rem-calc(50);
+    }
+}
+
+
+
+// =========================================================================
+//       OTHER PAGES OVERRIDES
+//========================================================================== 
+
+.banner{
+    height: rem-calc(120);
+    padding: rem-calc(30 0 20 0);
+    border-bottom: rem-calc(1);
+    border-color: #222;
+    background: #555 url('../img/banner.jpg') no-repeat center;
+
+    h1{
+        color: #fff;
+        font-size: 3*$base-font-size;
+        text-shadow: 0px 0px 20px #999;
+    }
+}
+
+.partner{
+    margin: rem-calc(45 0);
+}
+
+.form-button{
+    @include button(
+    $padding : rem-calc(11)
+    );
+}
+
+.accordion  {
+    .accordion-navigation  {
+    border: 1.5px solid darken($primary-color, 5%);
+  }
+}
+
+//==========================================================================
+//       CONTACT PAGE
+//==========================================================================
+
+#gMap-canvas{
+    height: rem-calc(450);
+    width: 100%;
+    img{
+        max-width: none;
+    }
+}
+
+#spamcheck{display: none;}
+
+.success {
+  padding: rem-calc(16);
+  margin-bottom: rem-calc(1);
+  text-shadow: 0 rem-calc(1) 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: rem-calc(1) solid #d6e9c6;
+  border-radius: rem-calc(4);
+}
+
+.error {
+  padding: rem-calc(16);
+  margin-bottom: rem-calc(1);
+  text-shadow: 0 rem-calc(1) 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: rem-calc(1) solid rgba(185, 74, 72, 0.3);
+  border-radius: rem-calc(4);
+}
+
+// =========================================================================
+//       FOOTER OVERRIDES
+//========================================================================== 
+
+footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0em 0 0em;
+    color: $white;
+}
+
+a.footer-img
+{
+    padding:0px 0px;
+}
+
+
+.copyrights{
+    padding: rem-calc(10 0 5 0);
+    .columns{
+        p {
+            font-size: $fine-print;
+
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+/*.columns {border: 1px solid red;}*/
+
+
+
+//For contact.html
+#map-canvas{
+    height: rem-calc(450);
+    width: 100%;
+    margin: rem-calc(0);
+    padding: rem-calc(0);
+}
+      
+
+//for construction
+.construction-heading
+{
+    font-case:uppercase;
+    font-weight: bold; 
+    //font-style: italic;
+   // text-decoration: underline;
+}
+
+.orbit-container{
+    .orbit-slides-container{
+        img{
+            display: inline-block;
+        }
+    }
+} 
+
+.jq_button { 
+    @include button(rem-calc(5), darken($primary-color, 5%), true, false, false, false);
+    border: 1.5px solid lighten($primary-color, 10%);
+    font-size: rem-calc(12);
+    }
+
+.panel_button { 
+    @include button(rem-calc(5), darken($primary-color, 5%), true, true, false, false);
+    border: 1.5px solid lighten($primary-color, 10%);
+    font-size: rem-calc(12);
+    }
+
+
+/*.banner{
+    //height: 450px;
+    //width: 100%;
+    //margin: 0px;
+    //padding: 0px;
+
+    img{
+        height: 100%
+    }
+}*/
+
+/* #featured .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}*/
+
+
+
+
+
+

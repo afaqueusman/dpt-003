@@ -1,25 +1,79 @@
 //- Top Bar 
-.contain-to-grid.header-section
-  nav.contain-to-grid.top-bar.important-class(data-topbar, role='navigation', data-options)
+.contain-to-grid.sticky.navigation-area
+  nav.contain-to-grid.top-bar.show-for-large-up(data-topbar, data-options)
     ul.title-area
       li.name
         a(href='index.html')
-          img#logo(alt='DePhy tech', src='img/logo.svg')
-      li.toggle-topbar.menu-icon
-        a
-          span
-    div.top-bar-section
+          img(alt='JONQUIL GROUP', src='img/jonquil.png')
+    section.top-bar-section
       ul.right
+        li.divider
         li(class=(slug === 'home') ? 'active' : '')
-          a(href='index.html') home
-        li(class=(slug === 'about') ? 'active' : '')
-          a(href='about.html') about  
-        li(class=(slug === 'design') ? 'active' : '')
-          a(href='design.html') design
-        li(class=(slug === 'physical') ? 'active' : '')
-          a(href='physical.html') physical
-        li(class=(slug === 'digital') ? 'active' : '')
-          a(href='digital.html') digital
+          a(href='index.html') Home
+        li.divider
+        li.has-dropdown
+          a(href='#') About Us
+          ul.dropdown
+            li
+              a(href='philosophy.html') Our Philosophy
+            li
+              a(href='message.html') Our Message
+        li.divider
+        li.has-dropdown
+          a(href='#') Activities
+          ul.dropdown
+            li
+              a(href='construction.html') Construction Services
+            li
+              a(href='trading.html') Trading Services
+            li
+              a(href='interior.html') Interior Designing
+        li.divider
+        li(class=(slug === 'partners') ? 'active' : '')
+          a(href='partner.html') Partners
+        li.divider
         li(class=(slug === 'contact') ? 'active' : '')
-          a(href='contact.html') contact
-.header-fill
+          a(href='contact.html') Contact Us
+        li.divider
+  //- Offcanvas 
+  nav.tab-bar.hide-for-large-up.sticky
+    section.left.tab-bar-section
+      h1.title-area
+        .name
+          a(href='index.html')
+            img(alt='JONQUIL GROUP', src='img/jonquil.png')
+    .right-small
+      a.right-off-canvas-toggle.menu-icon
+        span
+aside.right-off-canvas-menu
+  ul.off-canvas-list
+    li
+      label 
+        strong JONQUIL GROUP
+      hr
+    li
+      a(href='index.html') Home
+      hr
+    li
+      label About Us
+    li
+      a(href='philosophy.html') Our Philosophy
+    li
+      a(href='message.html') Our Message
+      hr
+    li
+      label Activities
+    li
+      a(href='construction.html') Construction Services
+    li
+      a(href='trading.html') Trading Services
+    li
+      a(href='interior.html') Interior Designing
+      hr
+    li
+      a(href='partner.html') Partners
+      hr
+    li
+      a(href='contact.html') Contact Us
+a.exit-off-canvas
+

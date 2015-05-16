@@ -1,0 +1,65 @@
+block vars
+  - var page_name='Contact Us'
+  - var slug='contact'
+  - var layout='full'
+
+extends partials/layout
+
+block index
+    section.text-center
+            #gMap-canvas
+    br
+    .row
+        .large-12.columns.round.panel
+            .row
+              .large-6.columns
+                h3 COME VISIT OUR OFFICE!
+                p
+                  | We&apos;d love to hear from you. You can either visit us or contact us and one of our awesome team members will get back to you. We love getting emails all day.
+              .large-5.large-offset-1.columns
+                address
+                  h4
+                    u Office:
+                  p
+                    | P.O.Box 69338,
+                    br
+                    | Dammam
+                    br
+                    | Tel. +96613 8060919 - 8060768 - 8277869
+                    br
+                    | info@jonquilgroup.com
+            .section-container.tabs(data-section='')
+              section
+                h5.title Contact Our Company
+                .content(data-slug='panel1')
+                  form#ajax-contact(method='post', action='process.php')
+                    .row
+                      .large-6.columns
+                        .row
+                          .small-3.columns
+                            label.inline(for='name') Your Name :
+                          .small-9.columns
+                            input#name(type='text', name='name', required='', placeholder='Full Name', autofocus='autofocus')
+                        .row
+                          .small-3.columns
+                            label.inline(for='email') Your Email :
+                          .small-9.columns
+                            input#email(type='email', name='email', required='', placeholder='example@example.com')
+                        .row
+                          .small-3.columns
+                            label.inline Your Phone No. :
+                          .small-9.columns
+                            input#phone(type='tel', name='phone', placeholder='With Country Code')
+                          .small-9.columns
+                            input#spamcheck(type='text', placeholder='Human (and Wookies): Please leave this field blank.', name='spamcheck')
+                      .large-6.columns
+                        .row
+                          .small-3.large-2.columns
+                            label Message :
+                          .small-9.large-10.columns
+                            textarea#message(name='message', required='', rows= '6', maxlength='999', placeholder='Your Message')
+                        .row
+                          .small-3.large-2.columns
+                          .small-9.large-10.columns
+                            button.form-button.right(type='submit') Submit
+                  .form-messages
