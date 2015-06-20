@@ -9,7 +9,7 @@ block index
     section.heroIndex
         .parallax
         .preloader
-        ul.example-orbit-content(data-orbit, data-options='animation:fade; pause_on_hover:true; resume_on_mouseout: true; animation_speed:500; bullets:false;')
+        ul.example-orbit-content(data-orbit, data-options='animation:slide; pause_on_hover:true; resume_on_mouseout: true; animation_speed:500; bullets:false;')
             div(data-orbit-slide='headline-1')
                 .slide-1
                     .row
@@ -38,7 +38,4 @@ block index
                             h2 Redefining Aesthetics in Home Decor
                             h5 
                             a.jq_button.info(href='interior.html') Learn More
-    .section.pg-background
-        .row.mp-content
-            .large-12.columns(data-equalizer='data-equalizer', data-options='equalize_on_stack: false')
-                include:markdown content/1-index.md
+    include partials/indexCont
