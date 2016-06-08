@@ -5,36 +5,18 @@
       li.name
         a(href='index.html')
           img(alt='Al Farahid Est.', src='img/alfarahid.png')
-    section.top-bar-section
+    div.top-bar-section
       ul.right
-        li.divider
         li(class=(slug === 'home') ? 'active' : '')
-          a(href='index.html') Home
-        li.divider
-        li.has-dropdown
-          a(href='#') About Us
-          ul.dropdown
-            li
-              a(href='philosophy.html') Our Philosophy
-            li
-              a(href='message.html') Our Message
-        li.divider
-        li.has-dropdown
-          a(href='#') Activities
-          ul.dropdown
-            li
-              a(href='construction.html') Construction Services
-            li
-              a(href='trading.html') Trading Services
-            li
-              a(href='interior.html') Interior Designing
-        li.divider
-        li(class=(slug === 'partners') ? 'active' : '')
-          a(href='partner.html') Partners
-        li.divider
+          a(href='index.html') home
+        li(class=(slug === 'about') ? 'active' : '')
+          a(href='about_us.html') about us 
+        li(class=(slug === 'design') ? 'active' : '')
+          a(href='divisions.html') divisions
+        li(class=(slug === 'c_service') ? 'active' : '')
+          a(href='c_service.html') customer service
         li(class=(slug === 'contact') ? 'active' : '')
-          a(href='contact.html') Contact Us
-        li.divider
+          a(href='contact.html') contact us
   //- Offcanvas 
   nav.tab-bar.hide-for-large-up.sticky
     section.left.tab-bar-section
