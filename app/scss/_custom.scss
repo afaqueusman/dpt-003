@@ -11,6 +11,32 @@ $fine-print: rem-calc(12);
 
 .navigation-area{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+
+    .top-bar-section ul {
+        background: none;
+        // MENU ITEM STYLES
+        li a:not(.button), li.active a:not(.button) {
+            background: none;
+            text-transform: uppercase;
+        }
+        // MENU ITEM HOVERS
+        li a:not(.button):hover {
+            background: none;
+            border-bottom: rem-calc(3) solid $primary-color;
+            color: #222;
+        }
+        // MENU ITEM ACTIVE
+        li.active a:not(.button) {
+            border-bottom: rem-calc(3) solid $primary-color;
+            color: #222;
+            &:hover {
+                background: none;
+            }
+        }
+        li {
+            margin-left: rem-calc(10);
+        }
+    }
 }
 
 #main-logo {
@@ -37,29 +63,25 @@ $fine-print: rem-calc(12);
             .slide-1{
                 height: rem-calc(450);
                 color: white;
-                background: rgba(0, 0, 0, 0.3);
             }
 
             .slide-2{
                 height: rem-calc(450);
                 color: white;
-                background: rgba(0, 0, 0, 0.3);
             }
 
             .slide-3{
                 height: rem-calc(450);
                 color: white;
-                background: rgba(0, 0, 0, 0.3);
             }
 
             .slide-4{
                 height: rem-calc(450);
                 color: white;
-                background: rgba(0, 0, 0, 0.3);
             }
 
             .large-6{
-                margin-top: rem-calc(100);
+                margin-top: rem-calc(160);
                 background: rgba(0, 0, 0, 0.3);
             }
 
@@ -130,15 +152,17 @@ $fine-print: rem-calc(12);
 .number3 {
     background: $white;
     .large-12{
-        padding: rem-calc(50 0 50 0);
+        padding: rem-calc(50 0 10 0);
     }
 }
 
 .number4 {
     background: $white;
-    .large-12{
-        padding: rem-calc(50 30);
+    .row{
+        padding: rem-calc(20 20);
+        border: 3px solid $primary-color;
     }
+    padding: rem-calc(0 0 40 0);
 }
 
 @media #{$large-up} {
@@ -177,17 +201,22 @@ $fine-print: rem-calc(12);
     padding: rem-calc(60 0 20 0);
     border-bottom: rem-calc(1);
     border-color: #222;
-    background: #555 url('../img/banner.jpg') no-repeat center;
+    background: #555 url('../img/banner.png') no-repeat center;
 
     h1{
         color: #fff;
         font-size: 3*$base-font-size;
-        text-shadow: 0px 0px 20px #999;
+        text-shadow: 3px 3px 10px #000;
     }
 }
 
 .partner{
     margin: rem-calc(45 0);
+}
+
+.generic1{
+    background: $white;
+    padding: rem-calc(40 0 40 0);
 }
 
 .form-button{
@@ -207,8 +236,26 @@ $fine-print: rem-calc(12);
 //==========================================================================
 
 #gMap-canvas{
-    height: rem-calc(450);
+    height: rem-calc(300);
     width: 100%;
+    img{
+        max-width: none;
+    }
+}
+
+#gMap-canvas2{
+    height: rem-calc(300);
+    width: 100%;
+    padding: rem-calc(10);
+    img{
+        max-width: none;
+    }
+}
+
+#gMap-canvas3{
+    height: rem-calc(300);
+    width: 100%;
+    padding: rem-calc(10);
     img{
         max-width: none;
     }
@@ -258,7 +305,6 @@ footer{
             }
         }
     }
-
 }
 
 a.footer-img

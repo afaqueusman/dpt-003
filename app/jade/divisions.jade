@@ -1,6 +1,6 @@
 block vars
-  - var page_name='Construction & Engineering'
-  - var slug='construction'
+  - var page_name='Divisions'
+  - var slug='division'
   - var layout='full'
 
 extends partials/layout
@@ -9,87 +9,252 @@ block index
   //Header 
   section.banner
     .row
-      h1 Construction and Engineering Services
+      h1 Divisions
   //End Header  
-  br
-  .row
-    .large-12.columns.round.panel
-      ul.breadcrumbs
-        li.unavailable Activities
-        li.current
-          a(href='#') Construction Services
-      p
-        strong Construction & Engineering
-        | , specialized in  Building construction & Concrete Construction Services, Interior Designing, Electrical Works & Excavation, Underground Construction Services.
-      p
-        | Our team of construction professionals offers a single-source solution for all of your construction-related needs. Whether it’s restoration, site preparation, a new facility or facility renovation, we have the experience and personnel to provide the highest quality construction on schedule and within budget. We support our clients from project inception, to the commissioning of the fully operational facility. And our network of local offices enables us to offer our clients the dual advantage of a strong local presence and broad geographic reach.
-      hr
-      .row
-        .large-4.push-8.columns
-          img(src='img/const_1.jpg')
-        .large-8.pull-4.columns
-          h5 Public engineering :  
-          p
-            | Construction of public works based on general planning, instruction, and control (including renovation, improvement, or demolition work)
-          h5 Construction engineering	:  
-          p
-            | Construction of buildings based on general planning, instruction, and control (including renovation, improvement, or demolition work)
-          h5 Plasterwork :  
-          p
-            | Applying, spraying, or affixing plaster, mortar, stucco, cement, fibers, etc. to work
-      hr
-      .row
-        .large-4.columns
-          img(src='img/const_2.jpg')
-        .large-8.columns
-          h5 Electrical work - IPTV, CATV, CCTV
-          p
-            | Installation of power generation, transformer, power distribution, and interior electrical facilities.
-          p
-            | IPTV, CATV, CCTV installation and maintenance
-          p
-            | Power generation facilities, electrical wiring, lead-in line, transformer facilities, interior electrical facilities (including electrical facilities for emergency use), illumination facilities, etc.
-          h5 FTTH / FTTB Networking :
-          p
-            | FTTH fiber-to-the-home and  fiber-to-the-building (FTTB), FFT which includes optical fiber that is installed directly into a home or enterprise. It includes trenching, Piping and cable pulling.
-          
-      hr
-      .row
-        .large-4.push-8.columns
-          img(src='img/const_3.jpg')
-        .large-8.pull-4.columns
-          h5 Scaffold / Construction/ Concrete work 
-          ul
-            li(style='list-style-type: circle;')
-              | Assembly of scaffolding, transport and placement of heavy objects, such as mechanical apparatuses and construction materials, assembly of steel frames, and demolition.
-            li(style='list-style-type: circle;')
-              | Excavation, piling up, or compression of earth or sand. Earth work, excavation, root-cutting, blasting operations, and embankment work
-            li(style='list-style-type: circle;')
-              | Concrete work, concrete driving work, concrete compression work, and prestressed concrete work
-            li(style='list-style-type: circle;')
-              | Landslide prevention, foundation improvement, boring grout, earth retaining, temporary coffering, spraying, highway section, riprap, external construction, and chipping work
-      hr
-      .row
-        .large-4.columns
-          img(src='img/const_4.jpg')
-        .large-8.columns
-          h5 Stone work :  
-          p Stone masonry or pitching and concrete block masonry or pitching 
-          h5 Piping work :  
-          p
-            | Work for installation of coolers, air conditioners, water supplies, hygiene facilities, and facilities for transport of water, oil, gas, and steam using metal pipes.
-          p
-            | Cooling and heating facilities, freezer/refrigerator facilities, water/hot water supply facilities, kitchen facilities, hygiene facilities, water purification facilities, water toilet facilities, gas pipe, duct, and pipe rehabilitation work
-      hr
-      .row
-        .large-4.push-8.columns
-          img(src='img/const_5.jpg')
-        .large-8.pull-4.columns
-          h5 Waterproofing work	:  
-          p Waterproofing with asphalt, mortar, or sealing materials 
-          h5 Fittings work :
-          p
-            | Work related to attachment of metal fittings, sashes, metal curtain walls, shutters, automatic doors, wooden fittings, and fusuma
-          h5 Firefighting facilities work :
-          p
-            | Installation of disaster warning facilities, fire extinguishing facilities, evacuation facilities, or facilities for firefighting or installation of such facilities in structures.
+  section.generic1
+    .row
+      .large-12.columns.round.panel
+        div(style="clear: both")
+          h3(style="float: left") 1. Al Farahid Est. for Agriculture and Veterinary
+          h5(style="float: right") Commercial Register No. 1010160924
+        hr
+        p When there is no chance for error, you need a partner that's as committed to risk reduction as you are. The contamination of food is one of the most important issues that cause serious problems for our health. At Al-Farahid Est. we combine fast, accurate and wide range of products for safety and testing of food samples to maintain quality, and protect your bottom line.
+        p We provide excellence in distribution of the highest quality, value-laden products to the veterinary and agricultural markets across GCC. We also offer diverse selection of animal medications and feed additives covering the full spectrum of customer requirements.
+        ul.tabs(data-tab)
+          li.tab-title.active
+            a(href="#panel1") A. Veterinary Healthcare
+          li.tab-title
+            a(href="#panel2") B. Food and Feed Testing
+        div.tabs-content
+          div.content#panel1.active
+            .large-12.columns.round
+              ul.small-block-grid-3.large-block-grid-5.text-center.panel.partner
+                li
+                  img(src='img/division/A-1.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-2.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-3.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-4.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-5.png', alt='Veterinary Healtchare')
+              dl.accordion(data-accordion='data-accordion')
+                dd.accordion-navigation
+                  a(href='#panel5') 
+                    h4 PANTEX Animal Healthcare
+                  #panel5.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Netherlands
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+                dd.accordion-navigation
+                  a(href='#panel6') 
+                    h4 UniPharma Growth & Treatment for Animals
+                  #panel6.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Malaysia
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+                dd.accordion-navigation
+                  a(href='#panel7') 
+                    h4 BIOMEDICAL Pharmaceuticals
+                  #panel7.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Egypt
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+                dd.accordion-navigation
+                  a(href='#panel8') 
+                    h4 LILLIDALE Diagnostics
+                  #panel8.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 United Kingdom
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+                dd.accordion-navigation
+                  a(href='#panel9') 
+                    h4 AGRIDENT
+                  #panel9.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Netherlands
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+          div.content#panel2
+            .large-12.columns.round
+              ul.small-block-grid-3.large-block-grid-5.text-center.panel.partner
+                li
+                  img(src='img/division/A-1.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-2.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-3.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-4.png', alt='Veterinary Healtchare')
+                li
+                  img(src='img/division/A-5.png', alt='Veterinary Healtchare')
+              dl.accordion(data-accordion='data-accordion')
+                dd.accordion-navigation
+                  a(href='#panel10') 
+                    h4 BIOO SCIENTIFIC
+                  #panel10.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 USA
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+                dd.accordion-navigation
+                  a(href='#panel11') 
+                    h4 RANDOX Food Diagnostics
+                  #panel11.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 United Kingdom
+                        p Provides animals medications.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+        br
+        div(style="clear: both")
+          h3(style="float: left") 2. Al Farahid Est. for Medical and Scientific Equipment
+          h5(style="float: right") Commerical Register No. 1010205877
+        hr
+        p Our Strength is our ability to source from across the globe efficiently and effectively. The rapid advance in the technology has introduced new approaches for answering several questions in the life science sector. Our team of specialists will help you select the best equimpment and suitable laboratory tools for your needs, and support you all the way for full product lifecycle. We supply highest quality reagents, disposables and other consumables for improved productivity and enhanced value for money.
+        ul.tabs(data-tab)
+          li.tab-title.active
+            a(href="#panel3") A. Biomedical Research
+          li.tab-title
+            a(href="#panel4") B. Lab Instruments and Supplies
+        div.tabs-content
+          div.content#panel3.active
+            .large-12.columns.round
+              ul.small-block-grid-3.large-block-grid-5.text-center.panel.partner
+                li
+                  img(src='img/division/C-1.png', alt='Biomedical Research')
+                li
+                  img(src='img/division/C-2.png', alt='Biomedical Research')
+                li
+                  img(src='img/division/C-3.png', alt='Biomedical Research')
+                li
+                  img(src='img/division/C-4.png', alt='Biomedical Research')
+                li
+                  img(src='img/division/C-5.png', alt='Biomedical Research')
+              dl.accordion(data-accordion='data-accordion')
+                dd.accordion-navigation
+                  a(href='#panel12') 
+                    h4 BIOO SCIENTIFIC
+                  #panel12.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 USA
+                        p Offers ready kits for detection based on rapid strips, lateral flow, ELISA assays system.
+                        |- Anaesthetic/Analgetic, Anti inflammatory    - Antibiotics, Anticoccidia
+                        |- Antiparasitic, Hormones                     - Insecticides, Iron
+                        |- Nutritional, Vitamins
+                dd.accordion-navigation
+                  a(href='#panel13') 
+                    h4 BioinGentech Biotechnology Company
+                  #panel13.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Chile
+                        p Provides bio-technical conventional and real-time PCR products in biomedical sciences.
+                dd.accordion-navigation
+                  a(href='#panel14') 
+                    h4 BIOSEARCH Technologies
+                  #panel14.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 USA
+                        p Specializes in custom synthesized oligonucleotides for qPCR, cGMP oligos for molecular diagnostics.
+                dd.accordion-navigation
+                  a(href='#panel15') 
+                    h4 Sisco Research Laboratories Pvt. Ltd.
+                  #panel15.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 India
+                        p Manufacturers of Reagents, Biochemicals, Organic Intermediates.
+          div.content#panel4
+            .large-12.columns.round
+              ul.small-block-grid-3.large-block-grid-5.text-center.panel.partner
+                li
+                  img(src='img/division/D-1.png', alt='Lab Instruments and Supplies')
+                li
+                  img(src='img/division/D-2.png', alt='Lab Instruments and Supplies')
+                li
+                  img(src='img/division/D-3.png', alt='Lab Instruments and Supplies')
+                li
+                  img(src='img/division/D-4.png', alt='Lab Instruments and Supplies')
+                li
+                  img(src='img/division/D-5.png', alt='Lab Instruments and Supplies')
+              dl.accordion(data-accordion='data-accordion')
+                dd.accordion-navigation
+                  a(href='#panel16') 
+                    h4 CAPP
+                  #panel16.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Denmark
+                        p Suppliers of liquid handling products.
+                dd.accordion-navigation
+                  a(href='#panel17') 
+                    h4 BIOLAB
+                  #panel17.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Canada
+                        p Provider of wide range of analytical and laboratory equipment
+                dd.accordion-navigation
+                  a(href='#panel18') 
+                    h4 IKA
+                  #panel18.content
+                    .row
+                      .large-6.push-6.columns
+                        img(src='img/ModernMinimalist_style.jpg')
+                      .large-6.pull-6.columns  
+                        h5 Germany
+                        p Market leaders for laboratory equipment and analytical technoglogies.

@@ -1,6 +1,6 @@
 script(src='https://maps.googleapis.com/maps/api/js')  
-script.
-      var myCenter=new google.maps.LatLng(26.437820, 50.106622)
+script
+      var myCenter=new google.maps.LatLng(24.587050, 46.762279)
       function initialize() {
             var mapCanvas = document.getElementById('gMap-canvas');
             var mapOptions = {
@@ -19,6 +19,50 @@ script.
             var map = new google.maps.Map(mapCanvas, mapOptions);
             var marker=new google.maps.Marker({
                   position:myCenter,
+            });
+            marker.setMap(map);
+      }
+      var myCenter2=new google.maps.LatLng(24.580263, 46.746944)
+      function initialize() {
+            var mapCanvas = document.getElementById('gMap-canvas2');
+            var mapOptions = {
+                  center: myCenter2,
+                  zoom: 15,
+                  panControl:true,
+                  zoomControl:true,
+                  mapTypeControl:true,
+                  scaleControl:true,
+                  streetViewControl:true,
+                  overviewMapControl:true,
+                  rotateControl:true, 
+                  scrollwheel: false,  
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker=new google.maps.Marker({
+                  position:myCenter,
+            });
+            marker.setMap(map);
+      }
+      var myCenter3=new google.maps.LatLng(24.565128, 46.746783)
+      function initialize() {
+            var mapCanvas = document.getElementById('gMap-canvas3');
+            var mapOptions = {
+                  center: myCenter3,
+                  zoom: 15,
+                  panControl:true,
+                  zoomControl:true,
+                  mapTypeControl:true,
+                  scaleControl:true,
+                  streetViewControl:true,
+                  overviewMapControl:true,
+                  rotateControl:true, 
+                  scrollwheel: false,  
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(mapCanvas3, mapOptions);
+            var marker=new google.maps.Marker({
+                  position:myCenter3,
             });
             marker.setMap(map);
       }
